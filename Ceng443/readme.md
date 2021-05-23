@@ -1,2 +1,2 @@
-Homework implementations of CENG443 INTRODUCTION TO OBJECT-ORIENTED PROG. LANG. AND SYSTEMS
+Homework implementations of CENG443 Introduction to Object-Oriented programming languages and systems
 
