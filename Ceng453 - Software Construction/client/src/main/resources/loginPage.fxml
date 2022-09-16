@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.pisti.client.controller.LoginController"
+            prefWidth="800.0" prefHeight="600.0" style="-fx-background-color: green">
+
+    <Text fill="BLACK" layoutX="74.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Page">
+        <font>
+            <Font name="Verdana " size="30.0"/>
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="74.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="usernameField" layoutX="73.0" layoutY="160.0" prefHeight="38.0" prefWidth="230.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="74.0"/>
+    <Text fill="WHITE" layoutX="74.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <PasswordField fx:id="passwordField" layoutX="73.0" layoutY="240.0" prefHeight="38.0" prefWidth="230.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="74.0"/>
+    <Button fx:id="loginButton" layoutX="74.0" layoutY="300.0" mnemonicParsing="false"
+            onAction="#loginHandle" prefHeight="27.0" prefWidth="99.0" text="Login"/>
+    <Text fill="WHITE" layoutX="74.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you don't have an account, please register.">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <Button fx:id="redirectoRegisterButton" layoutX="74.0" layoutY="380.0" mnemonicParsing="false" onAction="#redirectRegisterPage"
+            prefHeight="27.0" prefWidth="99.0" text="Register"/>
+
+    <Button fx:id="skipLoginButton" layoutX="74.0" layoutY="440.0" mnemonicParsing="false" onAction="#skipLogin"
+            prefHeight="27.0" prefWidth="99.0" text="Skip Login"/>
+</AnchorPane>

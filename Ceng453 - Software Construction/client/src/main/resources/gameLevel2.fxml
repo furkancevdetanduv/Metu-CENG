@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox fx:id="mainBox" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.pisti.client.controller.Level2Controller"
+      prefWidth="800.0" prefHeight="600.0" style="-fx-background-color: green">
+
+    <HBox alignment="CENTER">
+        <Text text="Level 2" fx:id="levelText" fill="white">
+            <font>
+                <Font size = "48.0"/>
+            </font>
+        </Text>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Text text="Purple" fx:id="AIText" fill="purple">
+            <font>
+                <Font size = "32.0"/>
+            </font>
+        </Text>
+    </HBox>
+
+    <HBox fx:id="enemyDeck" prefHeight="200.0" prefWidth="600.0" alignment="TOP_CENTER">
+
+    </HBox>
+
+    <HBox fx:id="table" prefHeight="900" prefWidth="600" alignment="CENTER">
+
+    </HBox>
+
+    <HBox fx:id="playerDeck"  prefHeight="600.0" prefWidth="600.0" alignment="BOTTOM_CENTER">
+
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Text text="Player" fx:id="playerText">
+            <font>
+                <Font size = "32.0" />
+            </font>
+        </Text>
+    </HBox>
+</VBox>
+

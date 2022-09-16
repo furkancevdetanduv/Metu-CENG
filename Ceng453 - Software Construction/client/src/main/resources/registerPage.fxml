@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.pisti.client.controller.RegisterController"
+            prefWidth="800.0" prefHeight="600.0" style="-fx-background-color: green">
+
+    <Text fill="BLACK" layoutX="74.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Page">
+        <font>
+            <Font name="Verdana " size="30.0"/>
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="74.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="emailField" layoutX="73.0" layoutY="160.0" prefHeight="38.0" prefWidth="230.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="74.0"/>
+    <Text fill="WHITE" layoutX="74.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <TextField fx:id="usernameField" layoutX="73.0" layoutY="242.0" prefHeight="38.0" prefWidth="230.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="74.0"/>
+    <Text fill="WHITE" layoutX="74.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <PasswordField fx:id="passwordField" layoutX="73.0" layoutY="320.0" prefHeight="38.0" prefWidth="230.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="74.0"/>
+    <Button fx:id="loginButton" layoutX="74.0" layoutY="380.0" mnemonicParsing="false"
+            onAction="#registerHandle" prefHeight="27.0" prefWidth="99.0" text="Register"/>
+    <Text fill="WHITE" layoutX="74.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you have an account, please login.">
+        <font>
+            <Font name="Verdana " size="18.0"/>
+        </font>
+    </Text>
+    <Button fx:id="redirectoRegisterButton" layoutX="74.0" layoutY="450.0" mnemonicParsing="false" onAction="#redirectLoginPage"
+            prefHeight="27.0" prefWidth="99.0" text="Login"/>
+</AnchorPane>
